@@ -169,3 +169,118 @@ a:hover {
     }
 }
 
+
+.bill-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin: 32px 0 60px 0;
+}
+
+.bill-card {
+    border: 1px solid rgba(230, 237, 239, 0.22);
+    background-color: rgba(230, 237, 239, 0.06);
+    padding: 20px;
+    border-radius: 14px;
+}
+
+.bill-state {
+    font-family: "Roboto", sans-serif;
+    color: var(--pink);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 6px;
+}
+
+.bill-card h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    margin: 0 0 8px 0;
+}
+
+.bill-card p {
+    font-size: 17px;
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+
+.thanks {
+    font-size: 18px;
+    color: var(--muted);
+    margin-bottom: 90px;
+}
+
+@media (max-width: 700px) {
+    .bill-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .cover-image {
+        height: 48vh;
+    }
+}
+
+.mental-health-panel {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 24px;
+    align-items: stretch;
+    margin: 36px 0 60px 0;
+}
+
+.stat-box {
+    background-color: rgba(230, 237, 239, 0.06);
+    border: 1px solid rgba(230, 237, 239, 0.2);
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.stat-number {
+    font-family: "Roboto", sans-serif;
+    font-size: 54px;
+    line-height: 0.9;
+    font-weight: 900;
+    color: var(--pink);
+    margin-bottom: 8px;
+}
+
+.stat-text {
+    font-size: 17px;
+    line-height: 1.35;
+    color: var(--muted);
+    margin-bottom: 22px;
+}
+
+.mental-health-panel img {
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+}
+
+.wide-photo {
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+.source-line {
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--muted);
+}
+
+.thanks {
+    font-size: 18px;
+    color: var(--muted);
+    margin-bottom: 90px;
+}
+
+@media (max-width: 700px) {
+    .mental-health-panel {
+        grid-template-columns: 1fr;
+    }
+
+    .mental-health-panel img {
+        height: auto;
+    }
+}
